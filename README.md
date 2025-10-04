@@ -28,6 +28,19 @@ To experience the multiplayer functionality, you must run the server on your mac
 -   [Git](https://git-scm.com/)
 
 **1. Clone the Repository**
-```bash
+```
 git clone [https://github.com/DerekNest/2d-physics-engine.git](https://github.com/DerekNest/2d-physics-engine.git)
 cd 2d-physics-engine
+```
+*2. Start the Server
+Navigate to the server directory, install dependencies, and start the application.
+
+```Bash
+cd server
+npm install
+node server.js
+```
+The terminal should confirm: Server started on port 8080...
+
+3. Run the Client
+With the server running, open the index.html file in your web browser. Open multiple browser tabs to simulate multiple clients connecting to your local server.
