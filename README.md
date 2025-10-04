@@ -4,7 +4,7 @@ A 2D physics engine built from scratch with a real-time multiplayer layer. This 
 
 ### [➡️ Live Demo (Client-Side Only)](https://DerekNest.github.io/2d-physics-engine/)
 
-![Demo GIF of the multiplayer physics engine](https://i.imgur.com/your-demo.gif)
+![Demo GIF of the multiplayer physics engine](demo.gif)
 
 ## Core Features
 
