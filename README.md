@@ -1,18 +1,35 @@
-# 2D Physics Engine from Scratch
+# Real-Time Multiplayer Physics Sandbox
 
-A simple 2D physics engine built with JavaScript and HTML Canvas. This project simulates gravity, restitution (bounciness), and realistic collision resolution between multiple objects.
+A 2D physics engine built from scratch with a real-time multiplayer layer. This project features an authoritative server-client architecture where the server runs the complete physics simulation and broadcasts the state to multiple clients, allowing users to interact in a shared, synchronized environment.
 
-### [➡️ View the Live Demo Here!](https://your-username.github.io/2d-physics-engine/)
+### [➡️ Live Demo (Client-Side Only)](https://DerekNest.github.io/2d-physics-engine/)
 
-![Demo GIF of the physics engine in action](demo.gif)
+![Demo GIF of the multiplayer physics engine](https://i.imgur.com/your-demo.gif)
 
-## Features
--   **Gravity:** Objects accelerate downwards.
--   **Boundary Collisions:** Objects bounce off the container walls.
--   **Object-Object Collisions:** Circles realistically collide and bounce off each other.
--   **Mass-Based Resolution:** Heavier (larger) circles have a greater impact in collisions.
+## Core Features
 
-## Built With
--   HTML5 Canvas
--   CSS
--   Vanilla JavaScript
+-   **Authoritative Server:** A Node.js server runs the entire physics simulation, ensuring a consistent state for all clients and preventing cheating.
+-   **Real-Time Communication:** Uses WebSockets for low-latency, bidirectional communication between the server and clients.
+-   **Shared Interaction:** Multiple users can simultaneously click, drag, and interact with objects in the shared physics world.
+-   **Custom Physics Engine:** All physics, including gravity, restitution, and collision resolution, were implemented from first principles.
+
+## Technologies Used
+
+-   **Back-End:** Node.js, WebSocket (`ws` library)
+-   **Front-End:** Vanilla JavaScript, HTML5 Canvas
+-   **Core Concepts:** Client-Server Architecture, Real-Time State Synchronization, Data Serialization (JSON)
+
+---
+
+## How to Run the Full Multiplayer Version Locally
+
+To experience the multiplayer functionality, you must run the server on your machine.
+
+**Prerequisites:**
+-   [Node.js](https://nodejs.org/)
+-   [Git](https://git-scm.com/)
+
+**1. Clone the Repository**
+```bash
+git clone [https://github.com/DerekNest/2d-physics-engine.git](https://github.com/DerekNest/2d-physics-engine.git)
+cd 2d-physics-engine
